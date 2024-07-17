@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b52d88ec62.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"> </i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>ML Enthusiast</p>
+                <h1>Hi, I'm <span>Siddhi</span><br>Kumbhar from India</h1>
+            </div>
+        </div>
+    </div>
+    <!-------about------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.jpg" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quibusdam laboriosam perspiciatis sapiente sint unde dolore vitae. Beatae, quis, vero perferendis aliquid nam porro veritatis sunt animi eius quae ea!</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Django Developer</span><br>Developing Back-end applications.</li>
+                            <li><span>ML Engineer</span><br>Building and deploying machine learning models.</li>
+                            <li><span>Data Scientist</span><br>Analyzing data, creating visualizations, developing predictive models.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Projects">
+                        <ul>
+                            <li><span>Emobeats</span><br>Developed a music recommendation system that selects songs based on the user’s current emotional state.</li>
+                            <li><span>DietBuddy</span><br>Developed a web-based application to provide personalized nutrition and diet plans.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>Sardar Patel Institute Of Technology, Andheri</span><br>Graduating June 2026<br>B-Tech, Computer Science and Engineering (Data Science)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------services----------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FrontEnd Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque mollitia reprehenderit dicta perferendis maiores quae, aperiam eaque in debitis deleniti et optio, quisquam beatae impedit laboriosam nihil fugiat illum.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>BackEnd Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque mollitia reprehenderit dicta perferendis maiores quae, aperiam eaque in debitis deleniti et optio, quisquam beatae impedit laboriosam nihil fugiat illum.</p>
+                    <a href="">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-laptop-code"></i>
+                    <h2>ML Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae neque mollitia reprehenderit dicta perferendis maiores quae, aperiam eaque in debitis deleniti et optio, quisquam beatae impedit laboriosam nihil fugiat illum.</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------portfolio------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="img 2.jpg" alt="DietBuddy Project">
+                    <div class="layer">
+                        <h3>Diet-Buddy</h3>
+                        <p>Developed a web-based application to provide personalized nutrition and diet plans.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="Emo-Beats Project">
+                    <div class="layer">
+                        <h3>Emo-Beats</h3>
+                        <p>Developed an intelligent music recommendation system that selects songs based on the user’s current emotional state.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!----------contact--------------------->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>kumbharsiddhi30@gmail.com</p>
+                <p><i class="fas fa-phone-square-altt"></i>+91-7066343531</p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                        
+                </div>
+                <a href="2022700026_siddhikumbhar.pdf" download class="btn btn2">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+  
+   </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontent = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tab of tabcontent) {
+                tab.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyz_REs6fTUnwd3hNoI7s8AdiqgHqyNrB_h2H9cChg9lL3Q8VJEPZRXn7CG7mGJn-0G/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const mas=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerhtml = "Message send succesfully"
+                setTimeout(function(){
+                    msg.innerhtml=""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
